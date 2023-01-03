@@ -20,8 +20,8 @@ import wandb
 
 from dataset.dataset import SampleDataset
 
-from audio_diffusion.models import DiffusionAttnUnet1D
-from audio_diffusion.utils import ema_update
+from GNR8R.models import DiffusionAttnUnet1D
+from GNR8R.utils import ema_update
 from viz.viz import audio_spectrogram_image
 
 
