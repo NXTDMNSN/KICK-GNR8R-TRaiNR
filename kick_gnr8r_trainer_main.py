@@ -191,8 +191,8 @@ if save_models_to_wandb == True:
 
 #@title INSTALL DEPENDENCIES
 #@markdown Restart runtaime from code output prompt, then run "Install Dependencies" again to complete installation.
-!git clone https://github.com/harmonai-org/sample-generator
-!pip install /content/sample-generator
+!git clone https://github.com/NXTDMNSN/KICK-GNR8R-TRaiNR.git
+!pip install /content/TRaiNR
 
 """# TRAINING 🧠📚"""
 
@@ -262,9 +262,9 @@ random_crop_str = f"--random-crop True" if RANDOM_CROP else ""
 CKPT_PATH = CKPT_PATH.replace(f" ", f"\ ")
 OUTPUT_DIR = f"{OUTPUT_DIR}/{NAME}".replace(f" ", f"\ ")
 
-# %cd /content/sample-generator/
+# %cd /content/TRaiNR/
 
-!python3 /content/sample-generator/train_uncond.py --ckpt-path $CKPT_PATH\
+!python3 /content/TRaiNR/train_uncond.py --ckpt-path $CKPT_PATH\
                                                           --name $NAME\
                                                           --training-dir $TRAINING_DIR\
                                                           --sample-size $SAMPLE_SIZE\
